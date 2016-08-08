@@ -1,25 +1,13 @@
-var add = function(number1, number2){
-  return number1 + number2;
-};
-var number1 = parseInt(prompt("enter a number:"));
-var number2 = parseInt(prompt("enter a number:"));
+$(document).ready(function(){
+  $("h1").click(function(){
+    alert("this is a header");
+  });
 
-alert (add(number1, number2));
+  $("p").click(function() {
+    alert("This is a paragraph");
+  });
 
-var subtract = function(number1, number2){
-return number1 - number2;};
-var number1 = parseInt(prompt("enter a number:"));
-var number2 = parseInt(prompt("enter a number:"));
-alert (subtract(number1, number2));
-
-var multiply = function(number1, number2){
-return number1 * number2;};
-var number1 = parseInt(prompt("enter a number:"));
-var number2 = parseInt(prompt("enter a number:"));
-alert (multiply(number1, number2));
-
-var divide = function(number1, number2){
-return number1 / number2;};
-var number1 = parseInt(prompt("enter a number:"));
-var number2 = parseInt(prompt("enter a number:"));
-alert (divide(number1, number2));
+  $("img").click(function() {
+    alert("This is a picture");
+  });
+});
